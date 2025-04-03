@@ -20,7 +20,7 @@
     </div>
 
 		<label for="colorPicker">Choose Background Color:</label>
-		<select id="colorPicker">
+		<select id="colorPicker" onchange="changeBackground()">
 			<option value="white">White</option>
 			<option value="deep_pink">Deep Pink</option>
 			<option value="pink">Pink</option>
@@ -29,9 +29,8 @@
 
     <!-- Image with Changeable Background -->
     <div class="image-container">
-        <img id="testImage" src="image3.png" alt="Test Image">
-    </div>
-    <button onclick="changeBackground()">Change Image Background</button>
+			<img id="testImage" src="image_1.png" alt="Test Image">
+		</div>
 
     <!-- Ads Section -->
     <div class="ads">
