@@ -9,7 +9,8 @@ function changeBackground() {
 		"white": "image1.png",
 		"deep_pink": "image1_deep_pink.png",
     "pink": "image1_pastel_pink.png",
-    "green": "image1_green.png"
+    "green": "image1_green.png",
+		"iphone_15": "image2.png"
 	};
 
   // Change the image source dynamically
