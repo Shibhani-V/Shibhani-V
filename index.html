@@ -3,46 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dropdown Loader</title>
-    <style>
-        .content {
-            margin-top: 20px;
-            border: 1px solid #ccc;
-            padding: 20px;
-        }
-    </style>
+    <title>Dummy Diff Test</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Select a Page to Load</h1>
-    <select id="page-selector">
-        <option value="">--Select a Page--</option>
-        <option value="old.html">Initial page</option>
-        <option value="new.html">Element attribute modified page</option>
-    </select>
 
-    <div class="content" id="content">
-        Please select a page from the dropdown menu above.
+    <!-- Banner Section -->
+    <header class="banner">
+        <h1>Welcome to Dummy Diff Test</h1>
+    </header>
+
+    <!-- Carousel Section -->
+    <div class="carousel">
+        <img id="carouselImage" src="image1.png" alt="Carousel Image">
+        <button onclick="nextImage()">Next</button>
     </div>
 
-    <script>
-        document.getElementById('page-selector').addEventListener('change', function() {
-            const value = this.value;
-            const contentDiv = document.getElementById('content');
+    <!-- Image with Changeable Background -->
+    <div class="image-container">
+        <img id="testImage" src="image3.png" alt="Test Image">
+    </div>
+    <button onclick="changeBackground()">Change Image Background</button>
 
-            if (value) {
-                fetch(value)
-                    .then(response => response.text())
-                    .then(html => {
-                        contentDiv.innerHTML = html;
-                    })
-                    .catch(err => {
-                        contentDiv.innerHTML = 'Error loading the page.';
-                        console.error(err);
-                    });
-            } else {
-                contentDiv.innerHTML = 'Please select a page from the dropdown menu above.';
-            }
-        });
-    </script>
+    <!-- Ads Section -->
+    <div class="ads">
+        <p>Ad Placeholder 1</p>
+        <p>Ad Placeholder 2</p>
+    </div>
+
+    <!-- Cookies Popup -->
+    <div id="cookiePopup" class="cookie-popup">
+        <p>This website uses cookies. <button onclick="acceptCookies()">OK</button></p>
+    </div>
+
+    <!-- Content Section -->
+    <div class="content">
+        <p class="text-element">This is a test paragraph.</p>
+        <p class="text-element">Another paragraph with the same class.</p>
+    </div>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
