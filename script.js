@@ -1,7 +1,8 @@
 // Change Image Background Color
 function changeBackground() {
-	let image = document.getElementById("testImage");
-	image.style.backgroundColor = image.style.backgroundColor === "yellow" ? "transparent" : "yellow";
+	let imageContainer = document.querySelector(".image-container");
+	let newColor = imageContainer.style.backgroundColor === "yellow" ? "white" : "yellow";
+	imageContainer.style.backgroundColor = newColor;
 }
 
 // Carousel Functionality
