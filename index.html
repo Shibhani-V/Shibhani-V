@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Loader</title>
+    <style>
+        .content {
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Select a Page to Load</h1>
+    <select id="page-selector">
+        <option value="">--Select a Page--</option>
+        <option value="old.html">Initial page</option>
+        <option value="new.html">Element attribute modified page</option>
+    </select>
+
+    <div class="content" id="content">
+        Please select a page from the dropdown menu above.
+    </div>
+
+    <script>
+        document.getElementById('page-selector').addEventListener('change', function() {
+            const value = this.value;
+            const contentDiv = document.getElementById('content');
+
+            if (value) {
+                fetch(value)
+                    .then(response => response.text())
+                    .then(html => {
+                        contentDiv.innerHTML = html;
+                    })
+                    .catch(err => {
+                        contentDiv.innerHTML = 'Error loading the page.';
+                        console.error(err);
+                    });
+            } else {
+                contentDiv.innerHTML = 'Please select a page from the dropdown menu above.';
+            }
+        });
+    </script>
+</body>
+</html>
