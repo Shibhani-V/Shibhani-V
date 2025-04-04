@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dummy Diff Test</title>
+    <link rel="stylesheet" href="style_diff.css">
+</head>
+<body>
+
+    <!-- Banner Section -->
+    <header class="banner">
+        <h1>Welcome to Dummy Diff Test</h1>
+    </header>
+
+    <!-- Carousel Section -->
+    <div class="carousel">
+        <img id="carouselImage" src="image1.png" alt="Carousel Image">
+        <button onclick="nextImage()">Next</button>
+    </div>
+
+		<div class="color-picker-container">
+			<label for="colorPicker">Choose Background Color:</label>
+			<select id="colorPicker" onchange="changeBackground()">
+					<option value="white">White</option>
+					<option value="deep_pink">Deep Pink</option>
+					<option value="pink">Pink</option>
+					<option value="green">Green</option>
+					<option value="iphone_15">iPhone 15</option>
+			</select>
+		</div>
+
+    <!-- Image with Changeable Background -->
+    <div class="image-container">
+			<img id="testImage" src="image1.png" alt="Test Image">
+		</div>
+
+    <!-- Ads Section -->
+    <div class="ads">
+        <p>Ad Placeholder 1</p>
+        <p>Ad Placeholder 2</p>
+    </div>
+
+    <!-- Cookies Popup -->
+    <div id="cookiePopup" class="cookie-popup">
+        <p>This website uses cookies. <button onclick="acceptCookies()">OK</button></p>
+    </div>
+
+    <!-- Content Section -->
+    <div class="content">
+			<p class="text-element">This is a test paragraph.</p>
+	
+			<p class="text-element">
+					This website is designed to test visual differences between images and UI elements efficiently. 
+					Featuring a dynamic carousel, customizable backgrounds, interactive elements, and a fixed cookie banner, 
+					it serves as a great playground for testing image-based automation. The site includes ads, banners, and 
+					various UI components to simulate real-world scenarios. Use it to evaluate visual regression, dynamic 
+					data handling, and automation strategies. With easy-to-modify HTML, CSS, and JavaScript, it’s ideal for 
+					experimenting with UI changes. Whether you’re testing diff algorithms or practicing automation scripts, 
+					this site provides the perfect environment. Explore, experiment, and optimize your testing workflow!
+			</p>
+	
+			<!-- Image with proper class for styling -->
+			<div class="image-container">
+					<img id="testImage" src="image1.png" alt="Test Image">
+			</div>
+		</div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
