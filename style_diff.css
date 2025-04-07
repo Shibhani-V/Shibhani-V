@@ -42,7 +42,7 @@ img {
 }
 
 /* Ads Section */
-.ads {
+.adslot {
 	margin: 20px;
 	padding: 10px;
 	background-color: #c36291;
@@ -50,7 +50,7 @@ img {
 }
 
 /* Cookies Popup */
-.cookie-popup {
+.cookie-popup-banner {
 	position: fixed;
 	bottom: 0;
 	left: 0;
@@ -64,7 +64,7 @@ img {
 	box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow at the top */
 }
 
-.cookie-popup button {
+.cookie-popup-banner button {
 	background: #147b9b73; /* Orange */
 	color: black;
 	border: none;
@@ -75,7 +75,7 @@ img {
 	border-radius: 5px;
 }
 
-.cookie-popup button:hover {
+.cookie-popup-banner button:hover {
 	background: #14b9eb73; /* Darker shade */
 }
 
