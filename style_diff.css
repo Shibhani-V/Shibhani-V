@@ -5,12 +5,24 @@ body {
 }
 
 /* Banner */
-.banner {
+.header-section {
 	background-color: #0073e6;
-	/* background-color: #a36ac9; */
 	color: black;
 	padding: 20px;
 	font-size: 24px;
+	font-family: Roboto;
+}
+
+.banner-tagline {
+	font-size: 20px;
+	font-weight: 500;
+	margin-top: 10px;
+}
+
+.banner-description p {
+	font-size: 16px;
+	font-style: italic;
+	margin: 10px 0 0;
 }
 
 /* Carousel */
