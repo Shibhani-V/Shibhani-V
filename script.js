@@ -27,3 +27,17 @@ function nextImage() {
 function acceptCookies() {
 	document.getElementById("cookiePopup").style.display = "none";
 }
+
+// script.js
+function updateTime() {
+  const timeElement = document.getElementById('current-time');
+  const now = new Date();
+  const formatted = now.toLocaleTimeString(); // e.g., "3:25:45 PM"
+  timeElement.textContent = formatted;
+}
+
+// Initial call
+updateTime();
+
+// Update every second (optional)
+setInterval(updateTime, 1000);
