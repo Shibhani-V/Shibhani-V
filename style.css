@@ -99,3 +99,8 @@ img {
 	font-weight: 500; /* Medium font weight */
 	text-align: justify; /* Align text properly */
 }
+
+#current-time {
+	font-weight: bold;
+	color: #333;
+}
