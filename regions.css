@@ -60,6 +60,7 @@ body {
 	color: #d9cd88;
 	justify-content: center;
 	align-items: center;
+	margin: 5px 0 0;
 }
 
 #random-text {
@@ -67,4 +68,5 @@ body {
 	color: #7b1313;
 	justify-content: center;
 	align-items: center;
+	margin: 5px 0 0;
 }
