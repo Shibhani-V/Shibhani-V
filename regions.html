@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Color Boxes</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 40px;
+      justify-content: center;
+      background-color: #f8f8f8;
+    }
+
+    .box {
+      width: 150px;
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      font-weight: bold;
+      color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .red    { background-color: #e74c3c; }
+    .blue   { background-color: #3498db; }
+    .green  { background-color: #2ecc71; }
+    .purple { background-color: #9b59b6; }
+    .orange { background-color: #e67e22; }
+  </style>
+</head>
+<body>
+
+  <div class="box red">Red Box</div>
+  <div class="box blue">Blue Box</div>
+  <div class="box green">Green Box</div>
+  <div class="box purple">Purple Box</div>
+  <div class="box orange">Orange Box</div>
+
+</body>
+</html>
