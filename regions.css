@@ -57,5 +57,12 @@ body {
 
 #current-time {
 	font-weight: bold;
-	color: #333;
+	color: #d9cd88;
+	justify-content: center;
+}
+
+#random-text {
+	font-weight: bold;
+	color: #7b1313;
+	justify-content: center;
 }
