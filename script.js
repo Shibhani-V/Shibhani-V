@@ -36,6 +36,32 @@ function updateTime() {
   timeElement.textContent = formatted;
 }
 
+function updateRandomText() {
+  const textElement = document.getElementById('random-text');
+
+  const texts = [
+    "Hello, world!",
+    "Testing visual diffs.",
+    "Random UI text.",
+    "Automation is fun!",
+    "Try changing this.",
+    "Pixel-perfect or not?",
+    "Running regression...",
+    "Hello from Percy!",
+    "Diff detected!",
+    "Random text here."
+  ];
+
+  // Pick a random text
+  const randomIndex = Math.floor(Math.random() * texts.length);
+  const selectedText = texts[randomIndex];
+
+  textElement.textContent = selectedText;
+}
+
+// Initial call
+updateRandomText();
+
 // Initial call
 updateTime();
 
