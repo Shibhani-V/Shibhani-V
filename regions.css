@@ -37,3 +37,9 @@ body {
   margin-top: 20px;
 }
 
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* or use "contain" if you don't want cropping */
+  border-radius: 10px;
+}
