@@ -4,60 +4,29 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Color Boxes</title>
-	<link rel="stylesheet" href="style_diff.css">
-  <style>
-    body {
-      font-family: sans-serif;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      padding: 40px;
-      justify-content: center;
-      background-color: #f8f8f8;
-    }
-
-    .box {
-      width: 150px;
-      height: 150px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 18px;
-      font-weight: bold;
-      color: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-
-    .salmon { background-color: #e9ada7; }
-    .blue   { background-color: #93c2e2; }
-    .green  { background-color: #d1f5dbeb; }
-    .purple { background-color: #c89ed9; }
-    .orange { background-color: #dcb593; }
-  </style>
+	<link rel="stylesheet" href="regions.css">
 </head>
 <body>
 
-  <div class="box red">Red Box</div>
-  <div class="box blue">Blue Box</div>
-  <div class="box green">Green Box</div>
-  <div class="box purple">Purple Box</div>
-  <div class="box orange">Orange Box</div>
 	<div class="carousel box salmon">Carousel</div>
   <div class="cookie-popup-banner cookie-banner box blue">Cookie</div>
   <div class="adslot google_ad advertisment google-ad box purple">Ads</div>
   <div class="banner-tagline box orange">
-		<header class="header-section">
-			<h1>Welcome to Dummy Diff Test</h1>
-			<div class="banner-tagline">Diff testing</div>
-			<section class="banner-description">
+		<div class="banner-tagline">Diff testing</div>
+		<section class="banner-description">
 				<p>Try different UI changes and see the diffs!</p>
-			</section>
-		</header>
+		</section>
 	</div>
+
+	<div class="row">
+    <div class="image-container box red">
+			<img id="testImage" src="image1_deep_pink.png" alt="Test Image">
+		</div>
+    <div class="box blue">Blue Box</div>
+    <div class="box green">Green Box</div>
+    <div class="box purple">Purple Box</div>
+    <div class="box orange">Orange Box</div>
+  </div>
 	
-  <div class="box orange">Orange Box</div>
-
-
 </body>
 </html>
